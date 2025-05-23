@@ -20,21 +20,21 @@ export function RoomPlanner() {
     {
       id: "kitchen",
       name: "Kitchen",
-      image: "/placeholder.svg?height=500&width=800",
+      image: "/kit.jpg?height=500&width=800",
       description:
         "Design your dream kitchen with our interactive planner. Choose from various layouts, cabinet styles, and color schemes.",
     },
     {
       id: "bedroom",
       name: "Bedroom",
-      image: "/placeholder.svg?height=500&width=800",
+      image: "/bedroom.jpg?height=500&width=800",
       description:
         "Create a peaceful bedroom retreat. Explore different bed placements, storage solutions, and decor options.",
     },
     {
       id: "living",
       name: "Living Room",
-      image: "/placeholder.svg?height=500&width=800",
+      image: "/livi.avif?height=500&width=800",
       description:
         "Plan your perfect living space. Experiment with furniture arrangements, lighting options, and accent pieces.",
     },

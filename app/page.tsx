@@ -102,32 +102,32 @@ export default function Home() {
             <ProjectCard
               title="Modern Apartment Makeover"
               category="Residential"
-              image="/placeholder.svg?height=400&width=600"
+              image="/appa.avif?height=400&width=600"
             />
             <ProjectCard
               title="Luxury Villa Interior"
               category="Residential"
-              image="/placeholder.svg?height=400&width=600"
+              image="/villa.avif?height=400&width=600"
             />
             <ProjectCard
               title="Corporate Office Design"
               category="Commercial"
-              image="/placeholder.svg?height=400&width=600"
+              image="/off.jpg?height=400&width=600"
             />
             <ProjectCard
               title="Restaurant Renovation"
               category="Commercial"
-              image="/placeholder.svg?height=400&width=600"
+              image="/res.avif?height=400&width=600"
             />
             <ProjectCard
               title="Boutique Hotel Lobby"
               category="Hospitality"
-              image="/placeholder.svg?height=400&width=600"
+              image="/hotel.jpg?height=400&width=600"
             />
             <ProjectCard
               title="Modern Kitchen Design"
               category="Residential"
-              image="/placeholder.svg?height=400&width=600"
+              image="/kitchen.jpg?height=400&width=600"
             />
           </div>
         </div>
@@ -167,16 +167,16 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center max-w-4xl mx-auto text-gray-600">
             <div className="p-4 border border-[#c9a55c]/20 rounded-lg bg-white shadow-sm">
-              <p className="font-medium text-lg">Dhanbad</p>
+              <p className="font-medium text-lg">Kalyan</p>
             </div>
             <div className="p-4 border border-[#c9a55c]/20 rounded-lg bg-white shadow-sm">
-              <p className="font-medium text-lg">Ranchi</p>
+              <p className="font-medium text-lg">Dombivli</p>
             </div>
             <div className="p-4 border border-[#c9a55c]/20 rounded-lg bg-white shadow-sm">
-              <p className="font-medium text-lg">Bokaro</p>
+              <p className="font-medium text-lg">Ulhasnagar</p>
             </div>
             <div className="p-4 border border-[#c9a55c]/20 rounded-lg bg-white shadow-sm">
-              <p className="font-medium text-lg">Jamshedpur</p>
+              <p className="font-medium text-lg">Thane</p>
             </div>
           </div>
         </div>

@@ -58,7 +58,7 @@ export function TestimonialsCarousel() {
       id: 5,
       name: "Amit Patel",
       role: "Restaurant Owner",
-      avatar: "/placeholder.svg?height=100&width=100",
+      avatar: "/cus.jpg?height=100&width=100",
       content:
         "The team at Muskan Interiors understood exactly what we wanted for our restaurant. They created a warm, inviting atmosphere that our customers love. The project was completed on schedule, and we couldn't be happier with the results.",
       project: "Restaurant Design",
