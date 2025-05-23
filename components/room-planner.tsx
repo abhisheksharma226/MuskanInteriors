@@ -1,5 +1,6 @@
 "use client"
 
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -14,6 +15,13 @@ interface RoomOption {
 }
 
 export function RoomPlanner() {
+
+    const router = useRouter()
+
+  const handleClick = () => {
+    router.push("/get-quote")
+  }
+
   const [selectedRoom, setSelectedRoom] = useState<RoomType>("kitchen")
 
   const rooms: RoomOption[] = [
@@ -64,7 +72,7 @@ export function RoomPlanner() {
 
           <div className="mt-8">
             <p className="text-gray-600 mb-4">{currentRoom.description}</p>
-            <Button className="w-full bg-[#c9a55c] hover:bg-[#b89346] text-white">Start Planning</Button>
+            <Button onClick={handleClick} className="w-full bg-[#c9a55c] hover:bg-[#b89346] text-white">Start Planning</Button>
           </div>
         </div>
 
