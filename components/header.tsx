@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -26,6 +27,12 @@ export function Header() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  }
+
+  const router = useRouter()
+
+  const handleClick = () => {
+    router.push("/get-quote")
   }
 
   return (
@@ -100,7 +107,8 @@ export function Header() {
               >
                 Contact
               </Link>
-              <Button
+              <Button 
+                onClick={handleClick}
                 className={`${
                   isScrolled
                     ? "bg-[#4a5d23] hover:bg-[#3a4a1c] text-white"

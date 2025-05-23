@@ -3,8 +3,8 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Playfair_Display } from "next/font/google"
-import { Header } from "@/components/header"
 import { ThemeProvider } from "@/components/theme-provider"
+import ConditionalHeader from "@/components/ConditionalHeader"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Header />
+          <ConditionalHeader />
           {children}
         </ThemeProvider>
       </body>
