@@ -1,3 +1,6 @@
+"use client"
+
+import { useRouter } from "next/navigation"
 import Image from "next/image"
 import { BeforeAfterSlider } from "@/components/before-after-slider"
 import { TestimonialsCarousel } from "@/components/testimonials-carousel"
@@ -11,7 +14,15 @@ import { ServiceCard } from "@/components/service-card"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Phone, Mail, MapPin } from "lucide-react"
 
+
 export default function Home() {
+
+  const router = useRouter()
+
+  const handleClick = () => {
+    router.push("/booking")
+  }
+
   return (
     <main className="min-h-screen">
       <WhatsAppButton />
@@ -33,12 +44,14 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-white/90 mb-8">
               Transform your space into a masterpiece with Muskan Interiors, where elegance meets functionality.
             </p>
-            <Button size="lg" className="bg-[#c9a55c] hover:bg-[#b89346] text-white">
+            <Button size="lg" onClick={handleClick}
+             className="bg-[#c9a55c] hover:bg-[#b89346] text-white">
               Book Free Consultation <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
       </section>
+      
 
       {/* What We Offer Section */}
       <section className="py-20 bg-[#f9f7f4]">

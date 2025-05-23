@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Page background & base text */
+    --background: 0 0% 95%;            /* Pure White (#ffffff) */
+    --foreground: 24 10% 20%;           /* Deep brown for text */
+
+    /* Card Styling */
+    --card: 40 60% 93%;                 /* Light creamy card (#FDF3E7 approx) */
+    --card-foreground: 24 10% 20%;      /* Deep brown for card text */
+
+    /* Input Fields */
+    --input: 0 0% 100%;                 /* White */
+    --input-foreground: 24 10% 20%;
+
+    /* Navbar */
+    --navbar-background: 220 25% 20%;   /* Dark navy/gray */
+    --navbar-foreground: 0 0% 100%;     /* White text */
+
+    /* Primary Button / Accent Color */
+    --primary: 205 90% 52%;             /* Blue (Tailwind primary) */
+    --primary-foreground: 0 0% 100%;
+
+    /* Borders & Ring */
+    --border: 30 30% 85%;
+    --ring: 205 90% 52%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Optional: you can define dark mode here if needed */
+  }
+}
